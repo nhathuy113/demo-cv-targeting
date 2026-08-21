@@ -1,0 +1,5 @@
+onnxruntime
+opencv-python
+numpy
+mss
+PyQt5

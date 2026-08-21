@@ -1,0 +1,18 @@
+---
+description: Behavior model must not train from tests input assets
+alwaysApply: true
+---
+
+# Behavior Training Boundary
+
+- Không được train, finetune, augment, extract crop, hoặc derive train data từ `tests/input/**`.
+- `tests/input/**` chỉ dùng cho test, demo, fixture, E2E, manual check.
+- Không được dùng input clip/ảnh mà user đưa để cải thiện model rồi quay lại report kết quả trên chính input đó.
+- Nếu thiếu dataset train riêng ngoài `tests/input/**`, phải dừng và nêu rõ blocker; không tự ý lấy test assets đi train.
+- Khi sửa script train behavior, source train phải trỏ vào thư mục dataset riêng như `dataset/**` hoặc path user chỉ định.
+
+Ví dụ:
+
+- Sai: `scripts/train_behavior.py` đọc ảnh từ `tests/input/attributes/**`.
+- Sai: cắt crop từ `tests/input/crime_real/wikimedia_porch_theft.ogv` để train rồi test lại clip đó.
+- Đúng: train từ dataset riêng ngoài `tests/input/**`, còn `tests/input/**` chỉ để evaluate/demo.

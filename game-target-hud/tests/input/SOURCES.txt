@@ -1,0 +1,39 @@
+bus.jpg
+  https://ultralytics.com/images/bus.jpg
+  (ảnh mẫu YOLO — spec detector: 4 person + 1 bus)
+
+zidane.jpg
+  https://ultralytics.com/images/zidane.jpg
+  (ảnh mẫu YOLO — 2 người)
+
+coco_000000000139.jpg
+  http://images.cocodataset.org/val2017/000000000139.jpg
+  COCO val2017
+
+coco_000000000785.jpg
+  http://images.cocodataset.org/val2017/000000000785.jpg
+  COCO val2017
+
+coco_000000001000.jpg
+  http://images.cocodataset.org/val2017/000000001000.jpg
+  COCO val2017
+
+solutions_ci_demo.mp4
+  https://github.com/ultralytics/assets/releases/download/v0.0.0/solutions_ci_demo.mp4
+  (video đám đông Ultralytics)
+
+mix.mp4
+  ghép từ bus.jpg + coco_000000000139.jpg + coco_000000000785.jpg + coco_000000001000.jpg
+  (nhiều class: person, bus, chair, tv, skis, …)
+
+attributes/
+  xem tests/input/attributes/SOURCES.txt
+  (threat / theft_like_posture Wikimedia; normal = ảnh person sẵn có)
+
+threat_test/
+  Mixkit STOCK (diễn, KHÔNG phải crime thật) — xem tests/input/threat_test/SOURCES.txt
+
+crime_real/
+  UCF-Crime + Wikimedia CCTV thật — xem tests/input/crime_real/SOURCES.txt
+  Tải: .venv/bin/python scripts/download_crime_videos.py
+

@@ -1,0 +1,11 @@
+COCO val2017 — chỉ class person (category_id=1), iscrowd=0.
+
+annotations:
+  https://huggingface.co/datasets/merve/coco/resolve/main/annotations/instances_val2017.json
+  (COCO instances_val2017.json — HuggingFace mirror; zip chính thức timeout)
+
+images:
+  http://images.cocodataset.org/val2017/<file_name>
+
+Phương án B (1 class `person`) — thay tank theo quyết định user.
+Split 70/20/10 theo image_id trong từng bucket gần/trung/xa, không shuffle.

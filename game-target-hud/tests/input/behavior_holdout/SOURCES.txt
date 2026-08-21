@@ -1,0 +1,7 @@
+# Holdout behavior — evaluate only. Không train.
+# Tải: .venv/bin/python scripts/download_behavior_videos.py
+#
+# theft_like/  5 clip UCF Shoplifting (001, 052–055)
+# normal/      5 clip UCF Testing_Normal (không trùng Training_Normal)
+#
+# Nguồn: https://huggingface.co/datasets/mteb/ucf-crime

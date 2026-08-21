@@ -1,0 +1,16 @@
+---
+description: Cấm shortcut thay model; thiếu thì dừng
+alwaysApply: true
+---
+
+# No CV shortcut
+
+Detect/classify/zone/hành vi = train `dataset/**` → ONNX → infer.
+
+CẤM: ROI/bbox JSON, tọa độ cứng, heuristic, proxy COCO, if-else thay class chưa train.
+
+Thiếu dataset/model → DỪNG, nêu blocker. Không ship thay thế.
+
+Sai: `config/store_zones/<clip>.json`; "laptop trong vùng = POS"
+Đúng: `scripts/train_<expert>.py` + `dataset/<expert>/`
+---

@@ -1,0 +1,6 @@
+path: /Users/huyriki/demo_cv_targeting/game-target-hud/dataset
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: person

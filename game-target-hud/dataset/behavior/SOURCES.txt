@@ -1,0 +1,15 @@
+# Behavior videos — UCF-Crime (CCTV thật).
+# Tải: .venv/bin/python scripts/download_behavior_videos.py
+# File *_clip30s.mp4 = 30 giây đầu.
+#
+# Train ở đây. KHÔNG train từ tests/input/**.
+#
+# Nguồn: https://www.crcv.ucf.edu/projects/real-world/
+# Mirror: https://huggingface.co/datasets/mteb/ucf-crime
+#
+# UCF Shoplifting unique = 50 (không đủ 95 train).
+# Split: 45 train + 5 holdout (tests/input/behavior_holdout/theft_like).
+# Holdout: Shoplifting001, 052, 053, 054, 055 — 001 đã dùng demo, không train.
+#
+# Normal train = 95 clip nhỏ nhất Training_Normal.
+# Normal UCF là CCTV chung, không bảo đảm toàn cảnh siêu thị.

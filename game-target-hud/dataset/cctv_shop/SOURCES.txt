@@ -1,0 +1,17 @@
+# UCF-Crime Shoplifting — train-only, không phải tests/input.
+# Nguồn: https://www.crcv.ucf.edu/projects/real-world/
+# Mirror: https://huggingface.co/datasets/mteb/ucf-crime
+# Tải: .venv/bin/python scripts/download_crime_videos.py
+#
+# Holdout/demo (cấm train): Shoplifting001, 005, 032, 045, 052, 055
+# Clip train-only. Pickup CCTV: crop 320×240 không gán nhãn chắc được — không đoán.
+
+videos/Shoplifting003_x264.mp4
+videos/Shoplifting007_x264.mp4
+videos/Shoplifting010_x264.mp4
+videos/Shoplifting021_x264.mp4
+videos/Shoplifting028_x264.mp4
+videos/Shoplifting037_x264.mp4
+videos/Shoplifting041_x264.mp4
+videos/Shoplifting050_x264.mp4
+videos/Shoplifting054_x264.mp4

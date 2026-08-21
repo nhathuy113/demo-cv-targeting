@@ -1,0 +1,13 @@
+---
+description: Project rules must be saved in coding-standard and .cursor/rules
+alwaysApply: true
+---
+
+# Dup project rules
+
+Canonical: `coding-standard/<name>.mdc`
+Cursor load: `.cursor/rules/<name>.mdc` (cùng nội dung)
+
+Thêm/sửa rule → ghi cả 2, rồi `bash coding-standard/sync-cursor-rules.sh`
+Không chỉ ghi một phía.
+---

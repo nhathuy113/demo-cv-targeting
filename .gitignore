@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+_local_demos/
+docs/*.mp4
+
+# data/train artifacts — tải lại bằng scripts/
+game-target-hud/dataset/**/images/
+game-target-hud/dataset/**/labels/
+game-target-hud/dataset/**/_download/
+game-target-hud/dataset/**/videos/
+game-target-hud/dataset/**/crops/
+game-target-hud/dataset/**/*.cache
+game-target-hud/runs/
+game-target-hud/tests/output/
+game-target-hud/tests/input/attributes/normal/
+game-target-hud/tests/input/attributes/threat/
+game-target-hud/tests/input/attributes/fraud/
+game-target-hud/tests/input/threat_test/*.mp4
+game-target-hud/tests/input/crime_real/
+game-target-hud/tests/input/behavior_holdout/**/*.mp4
+game-target-hud/*.pt
+game-target-hud/tools/realesrgan-ncnn-vulkan/
+sample_codes/*.zip

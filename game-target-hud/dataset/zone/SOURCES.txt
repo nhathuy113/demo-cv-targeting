@@ -1,0 +1,10 @@
+# Zone expert — Open Images V5 boxable (không dùng tests/input).
+
+# Map nhãn OI → class train (không bịa POS: OI không có cash register/POS).
+# cashier ← Countertop /m/0b3fp9
+# cash    ← Coin /m/0242l
+# exit    ← Door /m/02dgv
+# shelf   ← Shelf /m/0gjbg72
+
+# Ảnh: https://open-images-dataset.s3.amazonaws.com/{validation|test}/{ImageID}.jpg
+# Annot: https://storage.googleapis.com/openimages/v5/{validation|test}-annotations-bbox.csv

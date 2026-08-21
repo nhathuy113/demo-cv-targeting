@@ -1,0 +1,9 @@
+path: /Users/huyriki/demo_cv_targeting/game-target-hud/dataset/zone
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: cashier
+  1: cash
+  2: exit
+  3: shelf

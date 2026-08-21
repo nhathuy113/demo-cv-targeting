@@ -1,0 +1,7 @@
+# Pickup expert — V-COCO hold/carry (Gupta et al., COCO 2014 images).
+# Positive: crop person (+ object box nếu có) khi action hold hoặc carry = 1
+# Negative: cùng split, label hold/carry = 0
+# Ann: https://github.com/s-gupta/v-coco
+# Ảnh: http://images.cocodataset.org/{train2014,val2014}/
+# HICO-DET instances_train2015.json (hold/carry) nằm _download/ — ảnh HICO 7.5GB Drive, không tải mặc định.
+# Không đọc tests/input/**

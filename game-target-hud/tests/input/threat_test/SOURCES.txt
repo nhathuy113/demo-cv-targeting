@@ -1,0 +1,35 @@
+# Video test trộm / cướp giật (stock + CC). Không commit mp4.
+
+snatch_purse.mp4
+  Mixkit 31359 — cướp giật túi trên phố
+  https://assets.mixkit.co/videos/31359/31359-720.mp4
+  https://mixkit.co/free-stock-video/thief-steals-a-womans-purse-on-the-street-31359/
+
+steal_phone.mp4
+  Mixkit 31354 — móc điện thoại trong túi
+  https://assets.mixkit.co/videos/31354/31354-720.mp4
+  https://mixkit.co/free-stock-video/thief-silently-steals-a-womans-cell-phone-from-a-purse-31354/
+
+cctv_thieves.mp4
+  Mixkit 31372 — 2 người trộm đồ, góc camera an ninh
+  https://assets.mixkit.co/videos/31372/31372-720.mp4
+  https://mixkit.co/free-stock-video/two-thieves-recorded-on-a-security-camera-31372/
+
+steal_laptop_car.mp4
+  Mixkit 31363 — trộm laptop trong xe
+  https://assets.mixkit.co/videos/31363/31363-720.mp4
+  https://mixkit.co/free-stock-video/balaclava-assailant-steals-computer-from-car-31363/
+
+porch_theft.mp4
+  Wikimedia CC — trộm gói hàng trước cửa (convert từ .ogv)
+  File:Front Porch Theft 2012 11 17 101117.ogv
+  https://commons.wikimedia.org/wiki/File:Front_Porch_Theft_2012_11_17_101117.ogv
+
+Tải lại:
+  .venv/bin/python scripts/download_threat_videos.py
+
+Lưu ý taxonomy model hiện tại:
+  threat = đánh nhau / võ
+  theft_like_posture = tư thế với/lấy đồ (không suy "fraud")
+  HELD OUT test: tests/input/crime_real/wikimedia_porch_theft.ogv
+  → không report accuracy theft_like_posture trên clip đó.
